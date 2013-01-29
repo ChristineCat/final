@@ -1,51 +1,47 @@
 <?php include 'view/header.php'; ?>
-<?php include 'view/sidebar.php'; ?>
+
+
+<!-- video object methods -->
+	<script>
+
+//play contoller
+
+	function doPlay() {
+		var a = document.getElementById('video').play();
+	}
+
+
+//pause contoller
+
+	function doPause() {
+		var b = document.getElementById('video').pause();
+	}
+
+	</script>
+
 <div id="content">
-    <p><br />The Strings and Things Guitar Shop has a great selection of
-        musical instruments including guitars, basses, and drums. And we're
-        constantly adding more to give you the best selection possible!
-    </p>
 
-    <!-- display product -->
-    <h1>Featured products</h1>
-    <table>
-    <?php foreach ($products as $product) :
-        // Get product data
-        $list_price = $product['listPrice'];
-        $discount_percent = $product['discountPercent'];
-        $description = $product['description'];
-        
-        // Calculate unit price
-        $discount_amount = round($list_price * ($discount_percent / 100.0), 2);
-        $unit_price = $list_price - $discount_amount;
+	<section id="container">
+		<header id="top">
+			<h1>View Our Video</h1>
+		</header>
 
-        // Get first paragraph of description
-        $description = add_tags($description);
-        $i = strpos($description, "</p>");
-        $description = substr($description, 3, $i-3);
-    ?>
-        <tr>
-            <td id="product_image_column">
-                <img src="images/<?php echo $product['productCode']; ?>_s.png"
-                     alt="&nbsp;">
-            </td>
-            <td>
-                <p>
-                    <a href="catalog?action=view_product&amp;product_id=<?php 
-                              echo $product['productID']; ?>">
-                        <?php echo $product['productName']; ?>
-                    </a>
-                </p>
-                <p>
-                    <b>Your price:</b>
-                    $<?php echo number_format($unit_price, 2); ?>
-                </p>
-                <p>
-                    <?php echo $description; ?>
-                </p>
-            </td>
-        </tr>
-    <?php endforeach; ?>
-    </table>
+<!-- Content Starts Here -->
+
+		<video controls poster="images/joey.png" id='video' height='200'>
+			<source src='videos/joey.mp4' type='video/mp4' />
+		</video>
+
+
+<!-- Add video object methods -->
+
+		<br />
+		<button type='button' onclick='doPlay()'>Play Video</button>
+		<button type='button' onclick='doPause()'>Pause Video</button>
+
+<!-- Content Ends Here -->
+	</section>
+
+
 </div>
 <?php include 'view/footer.php'; ?>

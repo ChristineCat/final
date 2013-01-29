@@ -1,51 +1,26 @@
 <?php include 'view/header.php'; ?>
-<?php include 'view/sidebar.php'; ?>
-<div id="content">
-    <p><br />The Strings and Things Guitar Shop has a great selection of
-        musical instruments including guitars, basses, and drums. And we're
-        constantly adding more to give you the best selection possible!
-    </p>
 
-    <!-- display product -->
-    <h1>Featured products</h1>
-    <table>
-    <?php foreach ($products as $product) :
-        // Get product data
-        $list_price = $product['listPrice'];
-        $discount_percent = $product['discountPercent'];
-        $description = $product['description'];
-        
-        // Calculate unit price
-        $discount_amount = round($list_price * ($discount_percent / 100.0), 2);
-        $unit_price = $list_price - $discount_amount;
+<div id="storecontent">
+    </ br>
 
-        // Get first paragraph of description
-        $description = add_tags($description);
-        $i = strpos($description, "</p>");
-        $description = substr($description, 3, $i-3);
-    ?>
-        <tr>
-            <td id="product_image_column">
-                <img src="images/<?php echo $product['productCode']; ?>_s.png"
-                     alt="&nbsp;">
-            </td>
-            <td>
-                <p>
-                    <a href="catalog?action=view_product&amp;product_id=<?php 
-                              echo $product['productID']; ?>">
-                        <?php echo $product['productName']; ?>
-                    </a>
-                </p>
-                <p>
-                    <b>Your price:</b>
-                    $<?php echo number_format($unit_price, 2); ?>
-                </p>
-                <p>
-                    <?php echo $description; ?>
-                </p>
-            </td>
-        </tr>
-    <?php endforeach; ?>
-    </table>
+	<h2>Our Retail Store</h2>
+	<p>The Strings and Things Guitar Shop was founded in 1953, with the goal of serving professional musicians as a 
+	one-stop source for purchasing, repairing and restoring fine string instruments. </p>
+	
+	<p>Eventually, the business expanded to serve musicians at all levels and the instrument offerings increased as well.  
+	With its broader appeal, the store moved from its original location in the Bronx to Westchester County.  
+	Taking over a small warehouse, the company can now offer seminars and workshops.  The facility also is home for a number 
+	of musical societies, each with a different focus.  Professional music teachers often use our facilities, 
+	and once a month, we hold a "Jammin' Weekend for Professional Musicians.</p>
+	
+	<p>We would love to meet you and show you how personalized service from experienced professionals can make a difference to you.</p>
+    
+    <h2>Call, Write or Visit Us</h2>
+	<p>Strings and Things Guitar Shop</p>
+	<p>123 Warehouse Way</p>
+	<p>Harmony, NY  12345</p>
+	</br>
+	<p>(555) 123-4567</p>
+    
 </div>
 <?php include 'view/footer.php'; ?>

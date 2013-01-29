@@ -1,0 +1,22 @@
+<?php include 'view/header.php'; ?>
+<?php include 'view/sidebar.php'; ?>
+<div id="content">
+<!-- video object methods -->
+	<script>
+
+//play contoller
+
+	function doPlay() {
+		var a = document.getElementById('video').play();
+	}
+
+
+//pause contoller
+
+	function doPause() {
+		var b = document.getElementById('video').pause();
+	}
+
+	</script>
+</div>
+<?php include 'view/footer.php'; ?>

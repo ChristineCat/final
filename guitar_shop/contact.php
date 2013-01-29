@@ -1,51 +1,34 @@
 <?php include 'view/header.php'; ?>
-<?php include 'view/sidebar.php'; ?>
-<div id="content">
-    <p><br />The Strings and Things Guitar Shop has a great selection of
-        musical instruments including guitars, basses, and drums. And we're
-        constantly adding more to give you the best selection possible!
-    </p>
 
-    <!-- display product -->
-    <h1>Featured products</h1>
-    <table>
-    <?php foreach ($products as $product) :
-        // Get product data
-        $list_price = $product['listPrice'];
-        $discount_percent = $product['discountPercent'];
-        $description = $product['description'];
-        
-        // Calculate unit price
-        $discount_amount = round($list_price * ($discount_percent / 100.0), 2);
-        $unit_price = $list_price - $discount_amount;
+<div id="storecontent">
 
-        // Get first paragraph of description
-        $description = add_tags($description);
-        $i = strpos($description, "</p>");
-        $description = substr($description, 3, $i-3);
-    ?>
-        <tr>
-            <td id="product_image_column">
-                <img src="images/<?php echo $product['productCode']; ?>_s.png"
-                     alt="&nbsp;">
-            </td>
-            <td>
-                <p>
-                    <a href="catalog?action=view_product&amp;product_id=<?php 
-                              echo $product['productID']; ?>">
-                        <?php echo $product['productName']; ?>
-                    </a>
-                </p>
-                <p>
-                    <b>Your price:</b>
-                    $<?php echo number_format($unit_price, 2); ?>
-                </p>
-                <p>
-                    <?php echo $description; ?>
-                </p>
-            </td>
-        </tr>
-    <?php endforeach; ?>
-    </table>
+	</ br>
+	<h2><a href="mailto:john@stringsandthings.com">John Viola - Our Founder</a></h2>
+	<p>John Viola, a classical guitar player, founded our company in 1952.  His goal was to provide a needed 
+	resource for both instruments and maintenance of fine string instruments, including repairs and restoration. 
+	Although retired, he still can be found helping out at the store.</p>
+	
+	<h2><a href="mailto:jack@stringsandthings.com">Jack Viola - Our President</a></h2>
+	<p>Jack expanded the family business to include electric instruments.  He also moved it from its original 
+	location in the Bronx to Westchester County.  Taking over a small warehouse, the company can now offer seminars 
+	and workshops.  The facility also is home for a number of musical societies, each with a different focus.  
+	Professional music teachers often use our facilities, and once a month, we hold a "Jammin' Weekend for Professional 
+	Musicians.</p>
+	
+	<h2><a href="mailto:gianna@stringsandthings.com">Gianna Viola-Mandolino</a></h2>
+	<p>Jack's daughter, Gianna, recently joined the business and expanded the product line to include percussion instruments. 
+	Gianna is a projessional drummer for the popular "Girls Havin' Fun" rock band.  </p>
+	
+	<h2><a href="mailto:tony@stringsandthings.com">Tony Mandolino</a></h2>
+	<p>Gianna's husband, Tony Mandolino, has taken over the responsibility for the maintenance and repair 
+	services offered at the Strings and Things Guitar Shop</p>
+	
+	<h2>Call, Write or Visit Us</h2>
+	<p>Strings and Things Guitar Shop</p>
+	<p>123 Warehouse Way</p>
+	<p>Harmony, NY  12345</p>
+	</br>
+	<p>(555) 123-4567</p>
+    
 </div>
 <?php include 'view/footer.php'; ?>

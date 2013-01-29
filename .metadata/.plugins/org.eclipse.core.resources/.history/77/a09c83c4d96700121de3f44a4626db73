@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="jqm/jquery.mobile-1.2.0.min.css" />
+	<script src="jqm/jquery-1.8.2.min.js"></script>
+	<script src="jqm/jquery.mobile-1.2.0.min.js"></script>
+	<title>My basic jqm page</title>
+</head>
+<body>
+
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<h1>My PhoneGap App</h1>
+		</div>
+		<div data-role="content">
+			<h3>PhoneGap App</h3>
+			
+			<p>Select your action below</p>
+			
+			<ul data-role="listview">
+				<li data-icon="add"><a href="#contactadd" data-rel="dialog">Add Contact</a></li>
+				<li data-icon="refresh"><a href="#" onclick="">Load Contacts</a></li>
+				<li data-icon="gear"><a href="#" onclick="">Get Geolocation</a></li>
+				<li data-icon="alert"><a href="#" onclick="">Get Accelerometer</a></li>
+			</ul>
+		
+			<ul data-role="listview" id="contactlist">
+				<!-- popupated by phone gap -->
+			</ul>
+			
+		</div>
+	</div>
+	
+	<!-- The contact add page -->
+	<div data-role="page" id="contactadd">
+		<div data-role="header">
+			<h1>Add Contact</h1>
+			<a href="#" onclick="" data-icon="add">Add</a>
+		</div>
+		
+		<div data-role="content">
+			<h3>Enter Contact Info</h3>
+			
+			<fieldset data-role="fieldgroup">
+				<label for="firstName">First Name</label>
+				<input type="text" name="firstName" id="firstName" />
+				<label for="lastName">Last Name</label>
+				<input type="text" name="lastName" id="lastName" />
+				<label for="phone">Phone #</label>
+				<input type="tel" name="phone" id="phone" />
+			</fieldset>
+			
+		</div>
+	</div>
+	
+	<!-- The popup information dialog -->
+	<div data-role="page" id="info">
+		<div data-role="header">
+			<h1 id="info-page-title">Info</h1>
+		</div>
+		
+		<div data-role="content">
+			<span id="info-content">
+				<!-- @TODO: info content to be dynamically put into here -->
+			</span>
+		</div>
+	</div>
+	
+	<script>
+		//@TODO: put your functions here
+	
+		$(document).ready(function() {
+			
+		});
+		
+	</script>
+</body>
+</html>
