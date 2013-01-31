@@ -135,7 +135,7 @@ br {
 	width: 100%;
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: .1em;
 	border-top: .15em solid #FFFF99;
 	border-bottom: .15em solid #FFFF99;
 	border-width: 100%;
@@ -145,14 +145,14 @@ br {
 
 #header nav #menu li {
 	display: inline-block;
-	padding: .2em 0 -0.2em 0;
+	padding: .02em 0 -0.02em 0;
 	margin: 0;
 	position: relative;
 	vertical-align: middle;
 }
 
 #header nav #menu li a {
-	margin: 0.5em 0.5em -0.5em 0.5em;
+	margin: 0.5em 0.5em 0.5em 0.5em;
 	color: #FFFF99;
 	text-decoration: none;
 	font-style: normal;
@@ -164,11 +164,12 @@ br {
 	font-style: italic;
 	color: white;
 	font-weight: bold;
+	margin: 0;
 }
 
 #header nav li> ul {
 	position: absolute;
-	padding: .25em 0 0 0;
+	padding: 0 0 .025em 0;
 	left: -99999em;
 	text-align: left;
 	background-image: url(../images/background.jpg);
@@ -176,12 +177,12 @@ br {
 
 #header nav li ul li:hover> ul li {
 	position: absolute;
-	padding: 0;
+	padding: 0.2em;
 	margin: 0;
 	z-index: 0;
 	left: 12em;
 	top: inherit;
-	top: -1.75em;
+	top: -.75em;
 	text-align: left;
 	background-image: url(../images/background.jpg);
 }
