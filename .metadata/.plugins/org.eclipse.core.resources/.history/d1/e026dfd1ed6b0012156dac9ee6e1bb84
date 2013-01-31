@@ -1,0 +1,10 @@
+<?php include 'view/header.php'; ?>
+
+<div id="storecontent">
+    <p><br />Our monthly newsletter provides information about our featured instruments 
+    as well as seminars, workshops and other events.  You can <a href="newsletter/newsletter.pdf">view it online</a> 
+    or signup here.
+    </p>
+
+</div>
+<?php include 'view/footer.php'; ?>

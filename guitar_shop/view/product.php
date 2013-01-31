@@ -20,7 +20,7 @@
     $unit_price = number_format($unit_price, 2);
 
     // Get image URL and alternate text
-    $image_filename = $product_code . '_m.png';
+    $image_filename = $product_code . '_l.png';
     $image_path = $app_path . 'images/' . $image_filename;
     $image_alt = 'Image filename: ' . $image_filename;
 ?>

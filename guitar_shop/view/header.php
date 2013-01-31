@@ -38,7 +38,7 @@
             		<li><a class="MenuTop" href="<?php echo $app_path ?>home_view.php">Home</a>
             		<li><a class="MenuTop" href="<?php echo $app_path ?>catalog/index.php">Products</a>
             		<li><a class="MenuTop" href="<?php echo $app_path ?>store.php">Our Retail Store</a>
-            		<li><a class="MenuTop" href="<?php echo $app_path ?>info.php">Information</a>
+            		<li><a>Information</a>
             			<ul>
             				<li><a class="MenuRight" href="<?php echo $app_path ?>contact.php">Contact Us</a>
             					<ul>

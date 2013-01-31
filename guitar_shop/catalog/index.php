@@ -35,6 +35,11 @@ switch ($action) {
         // Get product data
         $product_id = $_GET['product_id'];
         $product = get_product($product_id);
+        
+        
+        $product_code = $_GET['product_code'];
+        $image_filename = $product_code . '_s.png';
+        
 
         // Display product
         include('product_view.php');
