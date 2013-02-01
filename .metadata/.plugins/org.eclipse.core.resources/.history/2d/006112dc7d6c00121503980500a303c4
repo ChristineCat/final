@@ -1,0 +1,25 @@
+<?php include 'view/header.php'; ?>
+	<script src="js/jquery-1.8.0.js"></script>
+	<script src="js/slideshow.js"></script>
+
+<div id="storecontent">
+    <p><br />The Strings and Things Guitar Shop has a great selection of
+        musical instruments including guitars, basses, and drums. And we're
+        constantly adding more to give you the best selection possible!
+    </p>
+    <p>We invite you to visit our store and take advantage of our three generations of expertise.</p>
+
+
+<!-- My Slideshow Here -->
+
+		<h2>Our Featured Instruments</h2>
+
+			<div class="slideShow">
+				<a href=""><img src="images/strat-l.png" alt="Fender Stratocaster" height="512"></a>
+				
+			</div>
+</div>	
+<!-- My Slideshow Ends Here -->
+
+
+<?php include 'view/footer.php'; ?>

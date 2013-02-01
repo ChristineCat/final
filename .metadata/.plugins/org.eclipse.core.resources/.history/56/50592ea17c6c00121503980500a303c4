@@ -1,0 +1,42 @@
+<?php include 'view/header.php'; ?>
+
+	<script>
+		$(document).ready(function(){
+			$('.slideShow img:gt(0)').hide();
+			setInterval(function(){$('.slideShow :first-child').fadeOut().next('img').fadeIn().end().appendTo('.slideShow');}, 3000);
+		});
+	</script>
+
+<div id="storecontent">
+    <p><br />The Strings and Things Guitar Shop has a great selection of
+        musical instruments including guitars, basses, and drums. And we're
+        constantly adding more to give you the best selection possible!
+    </p>
+    <p>We invite you to visit our store and take advantage of our three generations of expertise.</p>
+
+
+<!-- My Content Starts Here -->
+
+		<h2>Our Featured Instruments</h2>
+
+			<div class="slideShow">
+				<a href=""><img src="images/strat-l.png" alt="Fender Stratocaster" height="512"></a>
+				<img src="images/born_in_the_usa.jpg" alt="Bruce Springsteen" width="407" height="500" />
+				<img src="images/nevermind.jpg" alt="Nirvana" width="407" height="500" />
+			</div>
+
+			
+	<script src="js/jquery-1.8.0.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.slideShow img:gt(0)').hide();
+			setInterval(function(){$('.slideShow :first-child').fadeOut().next('img').fadeIn().end().appendTo('.slideShow');}, 3000);
+		});
+	</script>
+			
+</div>	
+<!-- My Content Ends Here -->
+
+
+<?php include 'view/footer.php'; ?>

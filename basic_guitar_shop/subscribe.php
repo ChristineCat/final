@@ -1,0 +1,8 @@
+<?php include 'view/header.php'; ?>
+
+<div id="storecontent">
+    <p><br />Thank you for subscribing to our newsletter</p>
+
+       
+</div>
+<?php include 'view/footer.php'; ?>
