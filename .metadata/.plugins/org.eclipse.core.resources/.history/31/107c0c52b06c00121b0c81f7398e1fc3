@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<link rel="stylesheet" href="themes/OceanF.min.css" />
+		<script type="text/javascript" 
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript"
+			src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<title>The Strings and Things Guitar Shop - Our Musical Instruments</title>
+	</head>
+
+	<body>
+		<div data-role="page" id="index_page" data-theme="a">
+			<div data-role="header">
+				<h1>The Strings and Things Guitar Shop - Our Musical Instruments</h1>
+				<h2>We've got the Right Guitar for You!</h2>
+				<div data-role="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="store.html">Our Retail Store</a></li>
+					<li><a href="info.html">Information</a></li>
+				</ul>
+				</div>
+				
+			</div>
+		
+			<div data-role="content">
+				<h1>The Strings and Things Guitar Shop - Our Products</h1>
+
+
+
+<div data-role="button">		
+<div data-role="collapsible-set">
+<div data-role="collapsible" 
+data-inset="false"
+data-mini="false"
+data-expanded-icon="arrow-d"
+data-collapsed="true">				
+<h3>Guitars</h3>
+
+
+
+
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Fender Stratocaster</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>
+
+
+
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Gibson Les Paul</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>
+
+
+
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Gibson SG</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>
+				
+				
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Yamaha FG 700S</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>				
+				
+
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Washburn D10S</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>			
+
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Rodriguez Caballero 11</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>	
+</div>
+</div>
+</div>
+
+
+
+<div data-role="button">		
+<div data-role="collapsible-set">
+<div data-role="collapsible" 
+data-inset="false"
+data-mini="false"
+data-expanded-icon="arrow-d"
+data-collapsed="true">				
+<h3>Basses</h3>
+
+
+
+
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Fender Precision</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>
+
+
+<div data-role="button">
+<div data-role="collapsible">
+<h3>Hofner Icon</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+
+				
+				
+			</div>
+
+			<div data-role="footer">
+<address>Strings and Things Guitar Shop  &nbsp &nbsp 123 Warehouse Way  &nbsp &nbsp Harmony, NY  12345</address>
+			</div>
+		</div>
+	
+		<div data-role="page" id="p2">
+			<div data-role="header">
+				<h1>Page 2 Title</h1>
+			</div>
+		
+			<div data-role="content">
+				Page 2 body
+				<a href="#p1">Go to page one</a>
+			</div>
+		</div>
+
+	</body>
+
+</html>
