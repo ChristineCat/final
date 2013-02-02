@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="12" version="2.0">
 <workbenchAdvisor/>
 <window height="760" maximized="true" width="1012" x="44" y="10">
 <fastViewData fastViewLocation="1024"/>
@@ -301,6 +301,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" name="products.html" tooltip="jqm_guitar_shop/products.html">
+<persistable path="/jqm_guitar_shop/products.html"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="main.css" tooltip="guitar_shop/main.css">
 <persistable path="/guitar_shop/main.css"/>
 </file>
@@ -342,9 +345,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.mobile-1.2.0.js" tooltip="org.apache.cordova.example.cordovaExample/assets/www/jqm/jquery.mobile-1.2.0.js">
 <persistable path="/org.apache.cordova.example.cordovaExample/assets/www/jqm/jquery.mobile-1.2.0.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.mobile-1.2.0.min.js" tooltip="org.apache.cordova.example.cordovaExample/assets/www/jqm/jquery.mobile-1.2.0.min.js">
-<persistable path="/org.apache.cordova.example.cordovaExample/assets/www/jqm/jquery.mobile-1.2.0.min.js"/>
 </file>
 </mruList>
 </workbench>
